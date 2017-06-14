@@ -1,0 +1,17 @@
+.img-circle {
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 195px; 
+    width: 205px;
+}
+.k{
+color: orange; 
+font-family: Broadway, arial, Fantasy; 
+background-color: white; 
+width: 410px	
+}
+.l{
+	color: purple; 
+	font-family: Forte, century, fantasy; 
+	font-size: 24px
+}
