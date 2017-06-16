@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>  
+<body>
+
+<p id="name"></p>
+<p id="ID"></p>
+
+<?php
+
+<form method="post" action="">
+<table>
+	<tr>
+		<td>Nama</td>
+		<td>:</td>
+		<td><input type="text" name="first" /></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td>:</td>
+		<td><input type="text" name="email" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td><input type="submit" name="kirim" value="Kirim"/></td>
+	</tr>
+</form>
+</table>
+
+<?php
+	if ($_post['kirim']) {
+		mysql_connect("localhost","root","") or die(mysql_error());
+		mysql_select_db("baqdhat") or die(mysql_error());
+
+		$first = $_POST['first'];
+		$email = $_POST['email'];
+
+		mysql_query{'INSERT INTO data VALUES('','$first','$email';"} or die (mysql_error());
+
+		}
+?>
+
+<?php
+
+		mysql_connect("localhost","root","") or die(mysql_error());
+		mysql_select_db("baqdhat") or die(mysql_error());
+
+	$hasil = mysql_query("SELECT * FROM data") or die (mysql_error());
+
+	$row = mysql_fetch_array($hasil);
+
+	echo "Nama Saya : " . $row['first'] . "<br/>";
+	echo "E-mail Saya : " .$row['email'] . "<br/>";
+?>
+
+</body>
+</html>
