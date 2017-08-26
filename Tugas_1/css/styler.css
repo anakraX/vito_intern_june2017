@@ -1,0 +1,72 @@
+@charset "utf-8";
+/*CSS Document*/
+
+* {	margin: 0px;
+	padding: 0px;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,Sans-serif'
+}
+body {
+    background: url('../images/zig_zag_wool.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header h2 {
+	margin-top: 30px;
+	margin-left: 35px;
+	font-size: 45px;
+	color: white;
+	text-align: center;
+}
+
+#content_1 {
+	height: 100px;
+	width: 700px;
+	background-color: #9168b3;
+	float: left;
+	margin-left: 220px; 
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#content_1 img {
+	height: 100px;
+	width: 60px;
+	float: left;
+}
+
+#content_2 {
+	height: 100px;
+	width: 700px;
+	background-color: #a8b368;
+	float: right;
+	margin-left: 10px; 
+	margin-right: 220px;
+	margin-top: 15px;
+}
+
+#content_2 img {
+	height: 100px;
+	width: 60px;
+	float: right;
+}
+
+#content_2 h4 {
+	padding: 10px;
+}
+
+#content_3 {
+	height: 100px;
+	width: 700px;
+	background-color: #9168b3;
+	float: left;
+	margin-left: 220px; 
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#content_3 img {
+	height: 100px;
+	width: 60px;
+	float: left;
+}
